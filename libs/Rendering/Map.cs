@@ -68,7 +68,7 @@ public class Map {
                 prevPosY >= 0 && prevPosY < _mapHeight)
         {
             if(GameObjectLayer[prevPosY, prevPosX] is Floor){
-GameObjectLayer[prevPosY, prevPosX] = new Floor();
+            GameObjectLayer[prevPosY, prevPosX] = new Floor();
             }
             
         }

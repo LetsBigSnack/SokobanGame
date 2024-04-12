@@ -37,6 +37,10 @@ public sealed class GameEngine
         return map;
     }
 
+    public List<GameObject> GetGameObjects(){
+        return gameObjects;
+    }
+
     public GameObject GetFocusedObject(){
         return _focusedObject;
     }

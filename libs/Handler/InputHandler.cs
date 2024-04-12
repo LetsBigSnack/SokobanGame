@@ -43,8 +43,6 @@ public sealed class InputHandler{
                 default:
                     break;
             }
-        }
-        
+        } 
     }
-
 }
