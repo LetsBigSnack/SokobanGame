@@ -37,6 +37,7 @@ C:\Users\davku\Documents\GitHub\SokobanGame\libs\obj\Debug\net8.0\refint\libs.dl
 C:\Users\davku\Documents\GitHub\SokobanGame\libs\obj\Debug\net8.0\libs.pdb
 C:\Users\davku\Documents\GitHub\SokobanGame\libs\obj\Debug\net8.0\ref\libs.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\libs\obj\Debug\net8.0\libs.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\libs\obj\Debug\net8.0\libs.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\libs\obj\Debug\net8.0\libs.AssemblyInfoInputs.cache
@@ -65,3 +66,18 @@ C:\Users\elina\Documents\GitHub\SokobanGame2\libs\obj\Debug\net8.0\refint\libs.d
 C:\Users\elina\Documents\GitHub\SokobanGame2\libs\obj\Debug\net8.0\libs.pdb
 C:\Users\elina\Documents\GitHub\SokobanGame2\libs\obj\Debug\net8.0\ref\libs.dll
 >>>>>>> elina
+=======
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\bin\Debug\net8.0\libs.deps.json
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\bin\Debug\net8.0\libs.dll
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\bin\Debug\net8.0\libs.pdb
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.csproj.AssemblyReference.cache
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.AssemblyInfoInputs.cache
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.AssemblyInfo.cs
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.csproj.CoreCompileInputs.cache
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.sourcelink.json
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.dll
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\refint\libs.dll
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\libs.pdb
+C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\libs\obj\Debug\net8.0\ref\libs.dll
+>>>>>>> igor

@@ -74,14 +74,19 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\User\\.nuget\\packages\\": {}
 =======
     "C:\\Users\\elina\\.nuget\\packages\\": {}
 >>>>>>> elina
+=======
+    "C:\\Users\\igorv\\.nuget\\packages\\": {}
+>>>>>>> igor
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj",
       "projectName": "game",
@@ -102,6 +107,17 @@
         "C:\\Users\\elina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
 >>>>>>> elina
+=======
+      "projectUniqueName": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj",
+      "projectName": "game",
+      "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj",
+      "packagesPath": "C:\\Users\\igorv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\igorv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> igor
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -115,12 +131,17 @@
           "targetAlias": "net8.0",
           "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj"
 =======
             "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj": {
               "projectPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj"
 >>>>>>> elina
+=======
+            "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj": {
+              "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj"
+>>>>>>> igor
             }
           }
         }
@@ -156,10 +177,14 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
 >>>>>>> elina
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+>>>>>>> igor
       }
     }
   }
