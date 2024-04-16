@@ -57,6 +57,7 @@ C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\refint\game.dl
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.pdb
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
+<<<<<<< HEAD
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.dll
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\refint\game.dll
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.pdb
@@ -77,3 +78,25 @@ C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.sourcel
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.csproj.Up2Date
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
+=======
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\game.exe
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\game.deps.json
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\game.runtimeconfig.json
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\game.dll
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\game.pdb
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\libs.dll
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\bin\Debug\net8.0\libs.pdb
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.sourcelink.json
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.csproj.Up2Date
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.dll
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\refint\game.dll
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.pdb
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\ref\game.dll
+>>>>>>> elina

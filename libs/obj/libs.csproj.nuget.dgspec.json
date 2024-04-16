@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj": {}
   },
   "projects": {
@@ -15,11 +16,29 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj",
+        "projectName": "libs",
+        "projectPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj",
+        "packagesPath": "C:\\Users\\elina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> elina
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +83,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+>>>>>>> elina
         }
       }
     }
