@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M4XrTq5AeNe/hPv2pN2Q0YbrKvBrVupjryTb8UoQXdln9PBGSUBVRPfqUc8kLAdyOXUz5nuhY+GFXsx1fifuKw==",
+  "dgSpecHash": "yhYY179zf/f8PE5B35By8ISKBRQzT33IU1xr5EsgtSp0RRUrJHW8gcCzbpANRnTl7b/R66apLPYg7SUVTB9geg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\game.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\davku\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

@@ -64,10 +64,12 @@ public class GameObject : IGameObject, IMovement
     //TODO: move this to player/service
     public void Move(int dx, int dy) {
         if(this.checkIfPossible(this._posX, this._posY, dx, dy)){
-        _prevPosX = _posX;
-        _prevPosY = _posY;
-        _posX += dx;
-        _posY += dy;
+            if(this.pushBox(this._posX, this._posY,dx, dy)){
+                _prevPosX = _posX;
+                _prevPosY = _posY;
+                _posX += dx;
+                _posY += dy;
+            }
         }
     }
 
@@ -79,11 +81,43 @@ public class GameObject : IGameObject, IMovement
         // -> upcoming position is "taken" && isNot a Floor
         // -> if type is "movable" apply changes to movable
         // -> return either true/false
-    
+
         for(int i = 0; i < gameObjects.Count; i++){
             if(gameObjects[i].Type == GameObjectType.Obstacle && gameObjects[i].PosX == currentX + newPosX &&
              gameObjects[i].PosY == currentY + newPosY){
                 Console.WriteLine("I happened");
+                return false;
+            } 
+        }
+        return true;
+    }
+
+    public bool checkIfNoBox(int currentX, int currentY, int newPosX, int newPosY){
+         List<GameObject> gameObjects = GameEngine.Instance.GetGameObjects();
+        Console.WriteLine(gameObjects);
+
+        for(int i = 0; i < gameObjects.Count; i++){
+            if(gameObjects[i].Type == GameObjectType.Box && gameObjects[i].PosX == currentX + newPosX &&
+             gameObjects[i].PosY == currentY + newPosY){
+                Console.WriteLine("I happened");
+                return false;
+            } 
+        }
+        return true;
+    }
+
+    public bool pushBox(int currentX, int currentY, int newPosX, int newPosY){
+        List<GameObject> gameObjects = GameEngine.Instance.GetGameObjects();
+        for(int i = 0; i < gameObjects.Count; i++){
+            if(gameObjects[i].Type == GameObjectType.Box && gameObjects[i].PosX == currentX + newPosX &&
+             gameObjects[i].PosY == currentY + newPosY){
+                if(checkIfPossible(gameObjects[i]._posX, gameObjects[i]._posY, newPosX, newPosY)){
+                    if(checkIfNoBox(gameObjects[i]._posX, gameObjects[i]._posY, newPosX, newPosY)){
+                    gameObjects[i].PosX += newPosX;
+                    gameObjects[i].PosY += newPosY;
+                    return true;
+                    }
+                }
                 return false;
             }
         }
