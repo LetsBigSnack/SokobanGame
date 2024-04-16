@@ -51,13 +51,11 @@ C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.AssemblyI
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.AssemblyInfo.cs
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.sourcelink.json
-C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.csproj.Up2Date
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.dll
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\refint\game.dll
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.pdb
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
-<<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\game.dll
 C:\Users\User\Desktop\Sokoboan_V2\SokobanGame\game\obj\Debug\net8.0\refint\game.dll
@@ -101,7 +99,6 @@ C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.pdb
 C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\elina\Documents\GitHub\SokobanGame2\game\obj\Debug\net8.0\ref\game.dll
 >>>>>>> elina
-=======
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\bin\Debug\net8.0\game.exe
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\bin\Debug\net8.0\game.deps.json
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -123,3 +120,4 @@ C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
 >>>>>>> igor
+C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.csproj.CopyComplete

@@ -1,80 +1,40 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj": {}
+    "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj": {
+    "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj",
+        "projectUniqueName": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\game.csproj",
         "projectName": "game",
-        "projectPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\game.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\game\\obj\\",
+        "projectPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\game.csproj",
+        "packagesPath": "C:\\Users\\davku\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\game\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\game\\game.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\game\\game.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\game\\game.csproj",
-        "projectName": "game",
-        "projectPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\game\\game.csproj",
-        "packagesPath": "C:\\Users\\elina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\game\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\elina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\davku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> elina
-=======
-    "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj",
-        "projectName": "game",
-        "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\game.csproj",
-        "packagesPath": "C:\\Users\\igorv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\game\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\igorv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> igor
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj"
-=======
-              "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj": {
-                "projectPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj"
->>>>>>> elina
-=======
-              "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj": {
-                "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj"
->>>>>>> igor
+              "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj": {
+                "projectPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj"
               }
             }
           }
@@ -83,11 +43,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -109,65 +64,33 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj": {
+    "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj",
+        "projectUniqueName": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj",
         "projectName": "libs",
-        "projectPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Sokoboan_V2\\SokobanGame\\libs\\obj\\",
+        "projectPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj",
+        "packagesPath": "C:\\Users\\davku\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj",
-        "projectName": "libs",
-        "projectPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\elina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elina\\Documents\\GitHub\\SokobanGame2\\libs\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\elina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\davku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> elina
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj",
-        "projectName": "libs",
-        "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\igorv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\igorv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> igor
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -180,11 +103,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -212,15 +130,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
->>>>>>> elina
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
->>>>>>> igor
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
