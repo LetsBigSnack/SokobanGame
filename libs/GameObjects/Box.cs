@@ -7,4 +7,9 @@ public class Box : GameObject {
         CharRepresentation = '○';
         Color = ConsoleColor.DarkGreen;
     }
+
+    public Box(GameObject gameObject): base(gameObject){
+        Type = GameObjectType.Box;
+        CharRepresentation = '○';
+    }
 }

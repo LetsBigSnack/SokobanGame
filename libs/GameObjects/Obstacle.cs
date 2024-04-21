@@ -6,4 +6,9 @@ public class Obstacle : GameObject {
         this.CharRepresentation = '█';
         this.Color = ConsoleColor.Cyan;
     }
+
+    public Obstacle(GameObject gameObject): base(gameObject){
+        this.Type = GameObjectType.Obstacle;
+        this.CharRepresentation = '█';
+    }
 }

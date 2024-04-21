@@ -7,4 +7,9 @@ public class Goal : GameObject {
         CharRepresentation = '⚑';
         Color = ConsoleColor.Red;
     }
+
+    public Goal(GameObject gameObject): base(gameObject){
+        Type = GameObjectType.Goal;
+        CharRepresentation = '⚑';
+    }
 }

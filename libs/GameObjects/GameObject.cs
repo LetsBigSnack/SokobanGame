@@ -30,6 +30,13 @@ public class GameObject : IGameObject, IMovement
         this._color = color;
     }
 
+    //Deep Copy created
+    public GameObject(GameObject gameObject){
+        this._posX = gameObject.PosX;
+        this._posY = gameObject.PosY;
+        this._color = gameObject.Color;
+    }
+
     public char CharRepresentation
     {
         get { return _charRepresentation ; }
@@ -64,11 +71,25 @@ public class GameObject : IGameObject, IMovement
     //TODO: move this to player/service
     public void Move(int dx, int dy) {
         if(this.checkIfPossible(this._posX, this._posY, dx, dy)){
+            GameStateNode oldNode = GameEngine.Instance.CurrentGameState;
+            GameStateNode newNode = new GameStateNode(GameEngine.Instance.CurrentGameState);
+            newNode.PreviousNode = GameEngine.Instance.CurrentGameState;
+            GameEngine.Instance.CurrentGameState.NextNode = newNode;
+            GameEngine.Instance.CurrentGameState = newNode;
+            //move box
             if(this.pushBox(this._posX, this._posY,dx, dy)){
+                
+                
                 _prevPosX = _posX;
                 _prevPosY = _posY;
                 _posX += dx;
                 _posY += dy;
+
+                newNode.PlayerXPos = Player.Instance.PosX;
+                newNode.PlayerYPos = Player.Instance.PosY;
+
+            }else{
+                GameEngine.Instance.CurrentGameState = oldNode; 
             }
         }
     }
@@ -76,11 +97,6 @@ public class GameObject : IGameObject, IMovement
     public bool checkIfPossible(int currentX, int currentY, int newPosX, int newPosY){
         List<GameObject> gameObjects = GameEngine.Instance.GetGameObjects();
         Console.WriteLine(gameObjects);
-
-        //go trough the map and check if
-        // -> upcoming position is "taken" && isNot a Floor
-        // -> if type is "movable" apply changes to movable
-        // -> return either true/false
 
         for(int i = 0; i < gameObjects.Count; i++){
             if(gameObjects[i].Type == GameObjectType.Obstacle && gameObjects[i].PosX == currentX + newPosX &&

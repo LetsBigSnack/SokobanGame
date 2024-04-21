@@ -21,47 +21,46 @@ public sealed class GameEngine
         }
     }
 
+    private GameStateNode _currentGameState;
+
+    public GameStateNode CurrentGameState{
+        get { return _currentGameState; }
+        set { _currentGameState = value; }
+    }
+
     private GameEngine() {
         //INIT PROPS HERE IF NEEDED
         gameObjectFactory = new GameObjectFactory();
+        _currentGameState = new GameStateNode();
     }
 
     private GameObject? _focusedObject;
 
-    private Map map = new Map();
-
-    private List<GameObject> gameObjects = new List<GameObject>();
-
-
     public Map GetMap() {
-        return map;
+        return _currentGameState.CurrentMap;
     }
 
     public List<GameObject> GetGameObjects(){
-        return gameObjects;
-    }
-
-    public GameObject GetFocusedObject(){
-        return _focusedObject;
+        return _currentGameState.CurrentGameObjects;
     }
 
     public void Setup(){
 
-        //Added for proper display of game characters
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         dynamic gameData = FileHandler.ReadJson();
         
-        map.MapWidth = gameData.map.width;
-        map.MapHeight = gameData.map.height;
+        _currentGameState.CurrentMap.MapWidth = gameData.map.width;
+        _currentGameState.CurrentMap.MapHeight = gameData.map.height;
 
         foreach (var gameObject in gameData.gameObjects)
         {
             AddGameObject(CreateGameObject(gameObject));
         }
         
-        _focusedObject = gameObjects.OfType<Player>().First();
-
+        _focusedObject = Player.Instance;
+        _currentGameState.PlayerXPos = _focusedObject.PosX;
+        _currentGameState.PlayerYPos = _focusedObject.PosY;
     }
 
     public void Render() {
@@ -69,16 +68,16 @@ public sealed class GameEngine
         //Clean the map
         Console.Clear();
 
-        map.Initialize();
+        _currentGameState.CurrentMap.Initialize();
 
         PlaceGameObjects();
 
         //Render the map
-        for (int i = 0; i < map.MapHeight; i++)
+        for (int i = 0; i < _currentGameState.CurrentMap.MapHeight; i++)
         {
-            for (int j = 0; j < map.MapWidth; j++)
+            for (int j = 0; j < _currentGameState.CurrentMap.MapWidth; j++)
             {
-                DrawObject(map.Get(i, j));
+                DrawObject(_currentGameState.CurrentMap.Get(i, j));
             }
             Console.WriteLine();
         }
@@ -91,14 +90,14 @@ public sealed class GameEngine
     }
 
     public void AddGameObject(GameObject gameObject){
-        gameObjects.Add(gameObject);
+        _currentGameState.CurrentGameObjects.Add(gameObject);
     }
 
     private void PlaceGameObjects(){
         
-        gameObjects.ForEach(delegate(GameObject obj)
+        _currentGameState.CurrentGameObjects.ForEach(delegate(GameObject obj)
         {
-            map.Set(obj);
+            _currentGameState.CurrentMap.Set(obj);
         });
     }
 
@@ -115,5 +114,28 @@ public sealed class GameEngine
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write(' ');
         }
+    }
+
+    public void UndoMove(){
+
+        if(_currentGameState.PreviousNode == null){
+            return;
+        }
+        _currentGameState = _currentGameState.PreviousNode;
+        Player.Instance.PosX = _currentGameState.PlayerXPos;
+        Player.Instance.PosY = _currentGameState.PlayerYPos;
+        Render();
+    }
+
+    public void RedoMove(){
+
+        if(_currentGameState.NextNode == null){
+            return;
+        }
+        _currentGameState = _currentGameState.NextNode;
+        Player.Instance.PosX = _currentGameState.PlayerXPos;
+        Player.Instance.PosY = _currentGameState.PlayerYPos;
+        Render();
+
     }
 }

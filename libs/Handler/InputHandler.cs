@@ -1,3 +1,5 @@
+using System.Windows.Input;
+
 namespace libs;
 
 public sealed class InputHandler{
@@ -22,7 +24,7 @@ public sealed class InputHandler{
 
     public void Handle(ConsoleKeyInfo keyInfo)
     {
-        GameObject focusedObject = engine.GetFocusedObject();
+        GameObject focusedObject = Player.Instance;
 
         if (focusedObject != null) {
             // Handle keyboard input to move the player
@@ -39,6 +41,16 @@ public sealed class InputHandler{
                     break;
                 case ConsoleKey.RightArrow:
                     focusedObject.Move(1, 0);
+                    break;
+                case ConsoleKey.Z:
+                    if ((keyInfo.Modifiers & ConsoleModifiers.Control) == ConsoleModifiers.Control) {
+                        engine.UndoMove();
+                    }
+                    break;
+                case ConsoleKey.Y:
+                    if ((keyInfo.Modifiers & ConsoleModifiers.Control) == ConsoleModifiers.Control) {
+                        engine.RedoMove();
+                    }
                     break;
                 default:
                     break;

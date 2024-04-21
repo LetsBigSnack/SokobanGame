@@ -6,4 +6,9 @@ public class Floor : GameObject {
         Type = GameObjectType.Floor;
         CharRepresentation = '.';
     }
+
+    public Floor(GameObject gameObject): base(gameObject){
+        Type = GameObjectType.Floor;
+        CharRepresentation = '.';
+    }
 }
