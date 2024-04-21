@@ -2,6 +2,7 @@ namespace libs;
 using Newtonsoft.Json;
 
 public class Map {
+    
     [JsonProperty]
     private char[,] RepresentationalLayer;
     [JsonProperty]
@@ -160,6 +161,19 @@ public class Map {
         }        
     }
 
+    public void UpdatePlayerInstancesToSingleton()
+        {
+            for (int y = 0; y < _mapHeight; y++)
+            {
+                for (int x = 0; x < _mapWidth; x++)
+                {
+                    if (GameObjectLayer[y, x] != null && GameObjectLayer[y, x].Type == GameObjectType.Player)
+                    {
+                        GameObjectLayer[y, x] = Player.Instance;
+                    }
+                }
+            }
+        }
 
 
 }

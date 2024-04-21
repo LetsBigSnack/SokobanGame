@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = game
-build_property.ProjectDir = C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\
+build_property.ProjectDir = C:\Users\davku\Documents\GitHub\SokobanGame\game\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

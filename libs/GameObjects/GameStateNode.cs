@@ -5,22 +5,18 @@ namespace libs;
 
 public class GameStateNode{
 
-    [JsonProperty]
+
     private Map _currentMap;
     
-    [JsonProperty]
     private List<GameObject> _currentGameObjects = new List<GameObject>();
 
-    [JsonProperty]
     private int _playerXPos;
 
-    [JsonProperty]
+
     private int _playerYPos;
 
-    [JsonProperty]
     private GameStateNode? _previousNode;
 
-    [JsonProperty]
     private GameStateNode? _nextNode;
 
     public GameStateNode(){
@@ -98,4 +94,14 @@ public class GameStateNode{
         return new Map(_currentMap);
     }
 
+    public void UpdatePlayerInstancesToSingleton()
+    {
+        for (int i = 0; i < _currentGameObjects.Count; i++)
+        {
+            if (_currentGameObjects[i].Type == GameObjectType.Player)
+            {
+                _currentGameObjects[i] = Player.Instance;
+            }
+        }
+    }
 }

@@ -55,19 +55,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igorv\\.nuget\\packages\\": {}
+    "C:\\Users\\davku\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj",
+      "projectUniqueName": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj",
       "projectName": "libs",
-      "projectPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\libs.csproj",
-      "packagesPath": "C:\\Users\\igorv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igorv\\Documents\\FH_St_Poelten\\4.Semester\\2.cd\\Sokoban\\SokobanGame\\libs\\obj\\",
+      "projectPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\libs.csproj",
+      "packagesPath": "C:\\Users\\davku\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\davku\\Documents\\GitHub\\SokobanGame\\libs\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\igorv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\davku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -75,6 +80,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -87,11 +93,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -119,7 +120,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

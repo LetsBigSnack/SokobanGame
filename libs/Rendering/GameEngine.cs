@@ -123,6 +123,8 @@ public sealed class GameEngine
         _currentGameState = _currentGameState.PreviousNode;
         Player.Instance.PosX = _currentGameState.PlayerXPos;
         Player.Instance.PosY = _currentGameState.PlayerYPos;
+        _currentGameState.UpdatePlayerInstancesToSingleton();
+        _currentGameState.CurrentMap.UpdatePlayerInstancesToSingleton();
         Render();
     }
 
@@ -133,14 +135,14 @@ public sealed class GameEngine
         _currentGameState = _currentGameState.NextNode;
         Player.Instance.PosX = _currentGameState.PlayerXPos;
         Player.Instance.PosY = _currentGameState.PlayerYPos;
+        _currentGameState.UpdatePlayerInstancesToSingleton();
+        _currentGameState.CurrentMap.UpdatePlayerInstancesToSingleton();
         Render();
 
     }
 
     public void SaveGameToJson(){
-        GameStateNode newGameStateNode = new GameStateNode(_currentGameState);
-        newGameStateNode.PreviousNode = null;
-        FileHandler.SaveGameToJson(newGameStateNode);
+        FileHandler.SaveGameToJson(_currentGameState);
     }
     
     public void LoadGameFromJson(){
@@ -149,6 +151,10 @@ public sealed class GameEngine
         _currentGameState = lastGame;
         Player.Instance.PosX = _currentGameState.PlayerXPos;
         Player.Instance.PosY = _currentGameState.PlayerYPos;
+        
+        _currentGameState.UpdatePlayerInstancesToSingleton();
+        _currentGameState.CurrentMap.UpdatePlayerInstancesToSingleton();
+
         Render();
     }
 }

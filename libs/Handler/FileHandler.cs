@@ -46,19 +46,18 @@ public static class FileHandler
     }
 
     public static void SaveGameToJson(GameStateNode _currentSate){
-        string fileName = "SavedGame.json";
         var settings = new JsonSerializerSettings
         {
             PreserveReferencesHandling = PreserveReferencesHandling.Objects
         };
         string jsonString = JsonConvert.SerializeObject(_currentSate, settings);
-        File.WriteAllText(fileName, jsonString);
+        File.WriteAllText($@"SavedGame.json", jsonString);
     }
 
     public static GameStateNode LoadGameFromJson(){
         try
         {
-            string jsonContent = File.ReadAllText("SavedGame.json");
+            string jsonContent = File.ReadAllText($@"SavedGame.json");
             GameStateNode newGameStateNode = JsonConvert.DeserializeObject<GameStateNode>(jsonContent);
             return newGameStateNode;
         }
