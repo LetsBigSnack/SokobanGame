@@ -140,7 +140,7 @@ public class Map {
         return copiedPresentationLayer;
     }
 
-    public void GameFinished(){
+    public bool GameFinished(){
         List<GameObject> _boxes = GameEngine.Instance.GetGameObjects().FindAll(e=>e.Type == GameObjectType.Box);
         List<GameObject> _goals = GameEngine.Instance.GetGameObjects().FindAll(e=>e.Type == GameObjectType.Goal);
 
@@ -156,9 +156,10 @@ public class Map {
 
         if(counter == _goals.Count){
             Console.WriteLine("You've won!");
-        } else {
-            counter = 0;
-        }        
+            return true;
+        }
+        
+        return false;     
     }
 
     public void UpdatePlayerInstancesToSingleton()

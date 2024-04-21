@@ -19,8 +19,11 @@ public class GameStateNode{
 
     private GameStateNode? _nextNode;
 
+    private int _currentMapIndex;
+
     public GameStateNode(){
         _currentMap = new Map();
+        _currentMapIndex = 0;
         _currentGameObjects = new List<GameObject>();
     }
 
@@ -29,6 +32,7 @@ public class GameStateNode{
         _currentMap = gameState.DeepCopyMap();
         _playerXPos = gameState.PlayerXPos;
         _playerYPos = gameState.PlayerYPos;
+        _currentMapIndex = gameState.CurrentMapIndex;
     }
 
     public Map CurrentMap{
@@ -59,6 +63,11 @@ public class GameStateNode{
     public GameStateNode? NextNode {
         get { return _nextNode; }
         set { _nextNode = value; }
+    }
+
+    public int CurrentMapIndex {
+        get { return _currentMapIndex; }
+        set { _currentMapIndex = value; }
     }
 
 

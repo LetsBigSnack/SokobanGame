@@ -28,10 +28,14 @@ public sealed class GameEngine
         set { _currentGameState = value; }
     }
 
+    private List<SavedMap> _savedMaps;
+
+
     private GameEngine() {
         //INIT PROPS HERE IF NEEDED
         gameObjectFactory = new GameObjectFactory();
         _currentGameState = new GameStateNode();
+        _savedMaps = new List<SavedMap>();
     }
 
     private GameObject? _focusedObject;
@@ -49,15 +53,33 @@ public sealed class GameEngine
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         dynamic gameData = FileHandler.ReadJson();
-        
-        _currentGameState.CurrentMap.MapWidth = gameData.map.width;
-        _currentGameState.CurrentMap.MapHeight = gameData.map.height;
 
-        foreach (var gameObject in gameData.gameObjects)
+        //gameData.maps
+
+        foreach (var mapData in gameData.maps)
         {
-            AddGameObject(CreateGameObject(gameObject));
+            Map tempMap = new Map();
+            List<GameObject> objList = new List<GameObject>();
+
+            tempMap.MapWidth = mapData.width;
+            tempMap.MapHeight = mapData.height;
+
+            foreach (var gameObject in mapData.gameObjects)
+            {
+                AddGameObjectToList(CreateGameObject(gameObject),objList);
+            }
+
+            SavedMap savedMap = new SavedMap();
+            savedMap.CurrentMap = tempMap;
+            savedMap.GameObjects = objList;
+
+            _savedMaps.Add(savedMap);
         }
-        
+
+        _currentGameState.CurrentMap = new Map(_savedMaps[0].CurrentMap);
+        _currentGameState.CurrentGameObjects = _savedMaps[0].GameObjects;
+        _currentGameState.CurrentMapIndex = 0;
+
         _focusedObject = Player.Instance;
         _currentGameState.PlayerXPos = _focusedObject.PosX;
         _currentGameState.PlayerYPos = _focusedObject.PosY;
@@ -81,6 +103,10 @@ public sealed class GameEngine
             }
             Console.WriteLine();
         }
+
+        if(_currentGameState.CurrentMap.GameFinished()){
+            LoadNextLevel();
+        }
     }
     
     // Method to create GameObject using the factory from clients
@@ -91,6 +117,10 @@ public sealed class GameEngine
 
     public void AddGameObject(GameObject gameObject){
         _currentGameState.CurrentGameObjects.Add(gameObject);
+    }
+
+    public void AddGameObjectToList(GameObject gameObject, List<GameObject> list){
+        list.Add(gameObject);
     }
 
     private void PlaceGameObjects(){
@@ -156,5 +186,29 @@ public sealed class GameEngine
         _currentGameState.CurrentMap.UpdatePlayerInstancesToSingleton();
 
         Render();
+    }
+
+    public void LoadNextLevel(){
+        
+        int currentIndex = _currentGameState.CurrentMapIndex;
+
+        if(currentIndex+1 < _savedMaps.Count){
+            
+            int newIndex = ++currentIndex;
+
+            GameStateNode node = new GameStateNode();
+
+            node.CurrentMap = new Map(_savedMaps[newIndex].CurrentMap);
+            node.CurrentGameObjects = _savedMaps[newIndex].GameObjects;
+            node.CurrentMapIndex = newIndex;
+
+            _focusedObject = Player.Instance;
+            node.PlayerXPos = _focusedObject.PosX;
+            node.PlayerYPos = _focusedObject.PosY;
+            _currentGameState = node;
+            Render();
+        }else{
+            //close whole game
+        }
     }
 }
