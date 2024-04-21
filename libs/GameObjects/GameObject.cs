@@ -88,6 +88,8 @@ public class GameObject : IGameObject, IMovement
                 newNode.PlayerXPos = Player.Instance.PosX;
                 newNode.PlayerYPos = Player.Instance.PosY;
 
+                GameEngine.Instance.CurrentGameState.CurrentMap.GameFinished();
+
             }else{
                 GameEngine.Instance.CurrentGameState = oldNode; 
             }

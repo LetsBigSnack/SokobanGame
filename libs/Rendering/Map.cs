@@ -35,6 +35,7 @@ public class Map {
         RepresentationalLayer = new char[_mapHeight, _mapWidth];
         GameObjectLayer = new GameObject[_mapHeight, _mapWidth];
 
+
         // Initialize the map with some default values
         for (int i = 0; i < GameObjectLayer.GetLength(0); i++)
         {
@@ -62,7 +63,6 @@ public class Map {
     }
 
     public void Set(GameObject gameObject){
-
         int posY = gameObject.PosY;
         int posX = gameObject.PosX;
         int prevPosY = gameObject.GetPrevPosY();
@@ -134,5 +134,28 @@ public class Map {
         }
         return copiedPresentationLayer;
     }
+
+    public void GameFinished(){
+        List<GameObject> _boxes = GameEngine.Instance.GetGameObjects().FindAll(e=>e.Type == GameObjectType.Box);
+        List<GameObject> _goals = GameEngine.Instance.GetGameObjects().FindAll(e=>e.Type == GameObjectType.Goal);
+
+        int counter = 0;
+
+        foreach(GameObject box in _boxes){
+            foreach(GameObject goal in _goals){
+                if((box.PosX == goal.PosX) && (box.PosY == goal.PosY)){
+                    counter++;
+                }
+            }
+        }
+
+        if(counter == _goals.Count){
+            Console.WriteLine("You've won!");
+        } else {
+            counter = 0;
+        }        
+    }
+
+
 
 }
