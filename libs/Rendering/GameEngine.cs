@@ -117,7 +117,6 @@ public sealed class GameEngine
     }
 
     public void UndoMove(){
-
         if(_currentGameState.PreviousNode == null){
             return;
         }
@@ -128,7 +127,6 @@ public sealed class GameEngine
     }
 
     public void RedoMove(){
-
         if(_currentGameState.NextNode == null){
             return;
         }
@@ -137,5 +135,20 @@ public sealed class GameEngine
         Player.Instance.PosY = _currentGameState.PlayerYPos;
         Render();
 
+    }
+
+    public void SaveGameToJson(){
+        GameStateNode newGameStateNode = new GameStateNode(_currentGameState);
+        newGameStateNode.PreviousNode = null;
+        FileHandler.SaveGameToJson(newGameStateNode);
+    }
+    
+    public void LoadGameFromJson(){
+        GameStateNode lastGame = FileHandler.LoadGameFromJson();
+        
+        _currentGameState = lastGame;
+        Player.Instance.PosX = _currentGameState.PlayerXPos;
+        Player.Instance.PosY = _currentGameState.PlayerYPos;
+        Render();
     }
 }

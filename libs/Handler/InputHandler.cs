@@ -52,6 +52,16 @@ public sealed class InputHandler{
                         engine.RedoMove();
                     }
                     break;
+                case ConsoleKey.S:
+                    if ((keyInfo.Modifiers & ConsoleModifiers.Control) == ConsoleModifiers.Control) {
+                        engine.SaveGameToJson();
+                    }
+                    break;
+                case ConsoleKey.R:
+                    if ((keyInfo.Modifiers & ConsoleModifiers.Control) == ConsoleModifiers.Control) {
+                        engine.LoadGameFromJson();
+                    }
+                    break;
                 default:
                     break;
             }

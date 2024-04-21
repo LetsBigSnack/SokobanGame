@@ -2,10 +2,14 @@ namespace libs;
 using Newtonsoft.Json;
 
 public class Map {
+    [JsonProperty]
     private char[,] RepresentationalLayer;
+    [JsonProperty]
     private GameObject?[,] GameObjectLayer;
 
+    [JsonProperty]
     private int _mapWidth;
+    [JsonProperty]
     private int _mapHeight;
 
     public Map () {

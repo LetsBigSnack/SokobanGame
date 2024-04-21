@@ -1,17 +1,26 @@
+using Newtonsoft.Json;
+
 namespace libs;
 
 
 public class GameStateNode{
 
+    [JsonProperty]
     private Map _currentMap;
+    
+    [JsonProperty]
     private List<GameObject> _currentGameObjects = new List<GameObject>();
 
+    [JsonProperty]
     private int _playerXPos;
 
+    [JsonProperty]
     private int _playerYPos;
 
+    [JsonProperty]
     private GameStateNode? _previousNode;
 
+    [JsonProperty]
     private GameStateNode? _nextNode;
 
     public GameStateNode(){
