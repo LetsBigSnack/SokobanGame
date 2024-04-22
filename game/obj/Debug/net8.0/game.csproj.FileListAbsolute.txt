@@ -120,4 +120,4 @@ C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\igorv\Documents\FH_St_Poelten\4.Semester\2.cd\Sokoban\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
 >>>>>>> igor
-C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.csproj.CopyComplete
+C:\Users\davku\Documents\GitHub\SokobanGame\game\obj\Debug\net8.0\game.csproj.Up2Date

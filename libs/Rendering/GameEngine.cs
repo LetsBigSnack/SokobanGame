@@ -67,11 +67,15 @@ public sealed class GameEngine
             foreach (var gameObject in mapData.gameObjects)
             {
                 AddGameObjectToList(CreateGameObject(gameObject),objList);
+
             }
 
             SavedMap savedMap = new SavedMap();
             savedMap.CurrentMap = tempMap;
             savedMap.GameObjects = objList;
+
+            savedMap.PlayerStartingX = savedMap.GameObjects.Find(x => x.Type == GameObjectType.Player).PosX;
+            savedMap.PlayerStartingY = savedMap.GameObjects.Find(x => x.Type == GameObjectType.Player).PosY;    
 
             _savedMaps.Add(savedMap);
         }
@@ -203,6 +207,11 @@ public sealed class GameEngine
             node.CurrentMapIndex = newIndex;
 
             _focusedObject = Player.Instance;
+            //
+            _focusedObject.PosX = _savedMaps[newIndex].PlayerStartingX;
+            _focusedObject.PosY = _savedMaps[newIndex].PlayerStartingX;
+            
+            
             node.PlayerXPos = _focusedObject.PosX;
             node.PlayerYPos = _focusedObject.PosY;
             _currentGameState = node;
