@@ -12,13 +12,18 @@ class Program
         engine.Setup();
 
         // Main game loop
-        while (true)
+        do 
         {
             engine.Render();
+
+            if(engine.IsGameComplete){
+                break;
+            }
 
             // Handle keyboard input
             ConsoleKeyInfo keyInfo = Console.ReadKey(true);
             inputHandler.Handle(keyInfo);
-        }
+        }while(true);
+        Console.WriteLine("You have won! Now touch some grass!");
     }
 }

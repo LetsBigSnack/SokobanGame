@@ -528,32 +528,38 @@
         },
         {
           "Type": 2,
+          "Color": 6,
           "PosX": 8,
           "PosY": 2
         },
         {
           "Type": 2,
+          "Color": 6,
           "PosX": 5,
           "PosY": 10
         },
         {
           "Type": 2,
+          "Color": 6,
           "PosX": 2,
           "PosY": 9
         },
         {
           "Type": 4,
           "PosX": 9,
+          "Color": 4,
           "PosY": 9
         },
         {
           "Type": 4,
           "PosX": 3,
+          "Color": 4,
           "PosY": 3
         },
         {
           "Type": 4,
           "PosX": 9,
+          "Color": 4,
           "PosY": 10
         }
       ]
@@ -775,7 +781,8 @@
         {
           "Type": 4, 
           "PosX": 3,
-          "PosY": 5
+          "PosY": 5,
+          "Color": 4
         },
         {
           "Type": 4,

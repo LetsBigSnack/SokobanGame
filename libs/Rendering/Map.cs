@@ -155,7 +155,6 @@ public class Map {
         }
 
         if(counter == _goals.Count){
-            Console.WriteLine("You've won!");
             return true;
         }
         
