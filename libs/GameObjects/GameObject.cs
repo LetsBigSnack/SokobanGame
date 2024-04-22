@@ -74,6 +74,8 @@ public class GameObject : IGameObject, IMovement
             GameStateNode oldNode = GameEngine.Instance.CurrentGameState;
             GameStateNode newNode = new GameStateNode(GameEngine.Instance.CurrentGameState);
             newNode.PreviousNode = GameEngine.Instance.CurrentGameState;
+            newNode.GameVersion = GameEngine.Instance.GameVersion;
+
             GameEngine.Instance.CurrentGameState.NextNode = newNode;
             GameEngine.Instance.CurrentGameState = newNode;
             //move box
@@ -98,12 +100,10 @@ public class GameObject : IGameObject, IMovement
 
     public bool checkIfPossible(int currentX, int currentY, int newPosX, int newPosY){
         List<GameObject> gameObjects = GameEngine.Instance.GetGameObjects();
-        Console.WriteLine(gameObjects);
 
         for(int i = 0; i < gameObjects.Count; i++){
             if(gameObjects[i].Type == GameObjectType.Obstacle && gameObjects[i].PosX == currentX + newPosX &&
              gameObjects[i].PosY == currentY + newPosY){
-                Console.WriteLine("I happened");
                 return false;
             } 
         }
@@ -112,12 +112,10 @@ public class GameObject : IGameObject, IMovement
 
     public bool checkIfNoBox(int currentX, int currentY, int newPosX, int newPosY){
          List<GameObject> gameObjects = GameEngine.Instance.GetGameObjects();
-        Console.WriteLine(gameObjects);
 
         for(int i = 0; i < gameObjects.Count; i++){
             if(gameObjects[i].Type == GameObjectType.Box && gameObjects[i].PosX == currentX + newPosX &&
              gameObjects[i].PosY == currentY + newPosY){
-                Console.WriteLine("I happened");
                 return false;
             } 
         }

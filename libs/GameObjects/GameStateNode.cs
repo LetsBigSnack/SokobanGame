@@ -21,6 +21,8 @@ public class GameStateNode{
 
     private int _currentMapIndex;
 
+    private int _gameVersion = 0;
+
     public GameStateNode(){
         _currentMap = new Map();
         _currentMapIndex = 0;
@@ -69,6 +71,12 @@ public class GameStateNode{
         get { return _currentMapIndex; }
         set { _currentMapIndex = value; }
     }
+
+    public int GameVersion {
+        get { return _gameVersion; }
+        set { _gameVersion = value; }
+    }
+
 
 
     public List<GameObject> DeepCopyGameObjects(){

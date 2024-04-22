@@ -23,13 +23,27 @@ public sealed class GameEngine
 
     private GameStateNode _currentGameState;
 
+
     public GameStateNode CurrentGameState{
         get { return _currentGameState; }
         set { _currentGameState = value; }
     }
 
+    private int _gameVersion = 3;
+
+    public int GameVersion {
+        get { return _gameVersion; }
+        set { _gameVersion = value; }
+    }
+
     private List<SavedMap> _savedMaps;
 
+    private bool _isGameComplete = false;
+
+    public bool IsGameComplete{
+         get { return _isGameComplete; }
+        set { _isGameComplete = value; }
+    }
 
     private GameEngine() {
         //INIT PROPS HERE IF NEEDED
@@ -83,6 +97,7 @@ public sealed class GameEngine
         _currentGameState.CurrentMap = new Map(_savedMaps[0].CurrentMap);
         _currentGameState.CurrentGameObjects = _savedMaps[0].GameObjects;
         _currentGameState.CurrentMapIndex = 0;
+        _currentGameState.GameVersion = _gameVersion;
 
         _focusedObject = Player.Instance;
         _currentGameState.PlayerXPos = _focusedObject.PosX;
@@ -181,15 +196,17 @@ public sealed class GameEngine
     
     public void LoadGameFromJson(){
         GameStateNode lastGame = FileHandler.LoadGameFromJson();
-        
-        _currentGameState = lastGame;
+
+        if(lastGame.GameVersion == _gameVersion){
+           _currentGameState = lastGame;
         Player.Instance.PosX = _currentGameState.PlayerXPos;
         Player.Instance.PosY = _currentGameState.PlayerYPos;
         
         _currentGameState.UpdatePlayerInstancesToSingleton();
         _currentGameState.CurrentMap.UpdatePlayerInstancesToSingleton();
 
-        Render();
+        Render(); 
+        }
     }
 
     public void LoadNextLevel(){
@@ -217,7 +234,7 @@ public sealed class GameEngine
             _currentGameState = node;
             Render();
         }else{
-            //close whole game
+            _isGameComplete = true;
         }
     }
 }
